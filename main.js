@@ -16,3 +16,4 @@ class Bluetooth {
         var a = 0;
     };
 }
+Scratch.extensions.register(new Bluetooth());
