@@ -13,8 +13,6 @@ class Bluetooth {
         }
     };
     bluetoothpick() {
-        const connectToDeviceAndSubscribeToUpdates = async () => {
-            const device = await navigator.bluetooth.requestDevice({});
-        };
+        var a = 0;
     };
 }
