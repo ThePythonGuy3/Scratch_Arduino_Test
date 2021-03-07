@@ -1,19 +1,30 @@
-class Bluetooth {
+class NitroBlock {
     getInfo() {
         return {
-            "id": "BluetoothPick",
-            "name": "BluetoothPick",
+            "id": "NitroBlock",
+            "name": "NitroBlock",
             "blocks": [{
-                    "opcode": "bluetoothpick",
-                    "blockType": "command",
-                    "text": "Pick Bluetooth device"
+                    "opcode": "substringy",
+                    "blockType": "reporter",
+                    "text": "letters [num1] through [num2] of [string]",
+                    "arguments": {
+                        "num1": {
+                            "type": "number",
+                            "defaultValue": "2"
+                        },
+                        "num2": {
+                            "type": "number",
+                            "defaultValue": "5"
+                        },
+                        "string": {
+                            "type": "string",
+                            "defaultValue": "hello world"
+                        }
+                    }
                 },
             }],
-        "menus": {
+        "menus": { //we will get back to this in a later tutorial
         }
     };
-    bluetoothpick() {
-        var a = 0;
-    };
 }
-Scratch.extensions.register(new Bluetooth());
+Scratch.extensions.register(new NitroBlock());
